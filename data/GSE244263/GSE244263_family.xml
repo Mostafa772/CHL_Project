@@ -1,0 +1,2133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Yuumi</First><Last>Okuzono</Last></Person>
+    <Email>yuumi.okuzono@takeda.com</Email>
+    <Phone>810466322618</Phone>
+    <Organization>Takeda Pharmaceutical Company Limited</Organization>
+    <Address>
+      <Line>26-Muraoka-higashi 2-chome</Line>
+      <City>FUJISAWA</City>
+      <State>KANAGAWA</State>
+      <Postal-Code>251-8555</Postal-Code>
+      <Country>Japan</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Tatsuo</First><Last>Ito</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Koji</First><Last>Fujita</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Dnyaneshwar</First><Last>Warude</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Shuuichi</First><Last>Miyakawa</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Yoshimi</First><Last>Mihara</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Naoko</First><Last>Matsui</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Hiroyuki</First><Last>Morino</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib10">
+    <Person><First>Yusuke</First><Last>Kikukawa</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib11">
+    <Person><First>Yuishin</First><Last>Izumi</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL28038">
+    <Status database="GEO">
+      <Submission-Date>2020-01-23</Submission-Date>
+      <Release-Date>2020-01-23</Release-Date>
+      <Last-Update-Date>2020-01-23</Last-Update-Date>
+    </Status>
+    <Title>DNBSEQ-G400 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL28038</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7810083">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_3</Title>
+    <Accession database="GEO">GSM7810083</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS3
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810083/suppl/GSM7810083_ALS3.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595613" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21923996" />
+  </Sample>
+
+  <Sample iid="GSM7810084">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_6</Title>
+    <Accession database="GEO">GSM7810084</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS6
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810084/suppl/GSM7810084_ALS6.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595612" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21923997" />
+  </Sample>
+
+  <Sample iid="GSM7810085">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_7</Title>
+    <Accession database="GEO">GSM7810085</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS7
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810085/suppl/GSM7810085_ALS7.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595611" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21923998" />
+  </Sample>
+
+  <Sample iid="GSM7810086">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_8</Title>
+    <Accession database="GEO">GSM7810086</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS8
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810086/suppl/GSM7810086_ALS8.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595610" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21923999" />
+  </Sample>
+
+  <Sample iid="GSM7810087">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_9</Title>
+    <Accession database="GEO">GSM7810087</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS9
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810087/suppl/GSM7810087_ALS9.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595609" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924000" />
+  </Sample>
+
+  <Sample iid="GSM7810088">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_10</Title>
+    <Accession database="GEO">GSM7810088</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS10
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810088/suppl/GSM7810088_ALS10.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595608" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924001" />
+  </Sample>
+
+  <Sample iid="GSM7810089">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_11</Title>
+    <Accession database="GEO">GSM7810089</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS11
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810089/suppl/GSM7810089_ALS11.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595607" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924002" />
+  </Sample>
+
+  <Sample iid="GSM7810090">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_13</Title>
+    <Accession database="GEO">GSM7810090</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS13
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810090/suppl/GSM7810090_ALS13.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595606" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924003" />
+  </Sample>
+
+  <Sample iid="GSM7810091">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_14</Title>
+    <Accession database="GEO">GSM7810091</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS14
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810091/suppl/GSM7810091_ALS14.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595605" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924004" />
+  </Sample>
+
+  <Sample iid="GSM7810092">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_16</Title>
+    <Accession database="GEO">GSM7810092</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS16
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810092/suppl/GSM7810092_ALS16.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595604" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924005" />
+  </Sample>
+
+  <Sample iid="GSM7810093">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_17</Title>
+    <Accession database="GEO">GSM7810093</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS17
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810093/suppl/GSM7810093_ALS17.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595603" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924006" />
+  </Sample>
+
+  <Sample iid="GSM7810094">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_18</Title>
+    <Accession database="GEO">GSM7810094</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS18
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810094/suppl/GSM7810094_ALS18.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595602" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924007" />
+  </Sample>
+
+  <Sample iid="GSM7810095">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_19</Title>
+    <Accession database="GEO">GSM7810095</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS19
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810095/suppl/GSM7810095_ALS19.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595601" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924008" />
+  </Sample>
+
+  <Sample iid="GSM7810096">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_20</Title>
+    <Accession database="GEO">GSM7810096</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS20
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810096/suppl/GSM7810096_ALS20.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595600" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924009" />
+  </Sample>
+
+  <Sample iid="GSM7810097">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_21</Title>
+    <Accession database="GEO">GSM7810097</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS21
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810097/suppl/GSM7810097_ALS21.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595599" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924010" />
+  </Sample>
+
+  <Sample iid="GSM7810098">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_22</Title>
+    <Accession database="GEO">GSM7810098</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS22
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810098/suppl/GSM7810098_ALS22.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595598" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924011" />
+  </Sample>
+
+  <Sample iid="GSM7810099">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_23</Title>
+    <Accession database="GEO">GSM7810099</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS23
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810099/suppl/GSM7810099_ALS23.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595597" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924012" />
+  </Sample>
+
+  <Sample iid="GSM7810100">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_24</Title>
+    <Accession database="GEO">GSM7810100</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS24
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810100/suppl/GSM7810100_ALS24.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595596" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924013" />
+  </Sample>
+
+  <Sample iid="GSM7810101">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_25</Title>
+    <Accession database="GEO">GSM7810101</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS25
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810101/suppl/GSM7810101_ALS25.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595595" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924014" />
+  </Sample>
+
+  <Sample iid="GSM7810102">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_26</Title>
+    <Accession database="GEO">GSM7810102</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS26
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810102/suppl/GSM7810102_ALS26.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595594" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924015" />
+  </Sample>
+
+  <Sample iid="GSM7810103">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_27</Title>
+    <Accession database="GEO">GSM7810103</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS27
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810103/suppl/GSM7810103_ALS27.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595593" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924016" />
+  </Sample>
+
+  <Sample iid="GSM7810104">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_28</Title>
+    <Accession database="GEO">GSM7810104</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS28
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810104/suppl/GSM7810104_ALS28.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595592" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924017" />
+  </Sample>
+
+  <Sample iid="GSM7810105">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_29</Title>
+    <Accession database="GEO">GSM7810105</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS29
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810105/suppl/GSM7810105_ALS29.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595591" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924018" />
+  </Sample>
+
+  <Sample iid="GSM7810106">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_30</Title>
+    <Accession database="GEO">GSM7810106</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS30
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810106/suppl/GSM7810106_ALS30.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595590" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924019" />
+  </Sample>
+
+  <Sample iid="GSM7810107">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_31</Title>
+    <Accession database="GEO">GSM7810107</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS31
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810107/suppl/GSM7810107_ALS31.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595589" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924020" />
+  </Sample>
+
+  <Sample iid="GSM7810108">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_32</Title>
+    <Accession database="GEO">GSM7810108</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS32
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810108/suppl/GSM7810108_ALS32.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595588" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924021" />
+  </Sample>
+
+  <Sample iid="GSM7810109">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_33</Title>
+    <Accession database="GEO">GSM7810109</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS33
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810109/suppl/GSM7810109_ALS33.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595587" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924022" />
+  </Sample>
+
+  <Sample iid="GSM7810110">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_34</Title>
+    <Accession database="GEO">GSM7810110</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS34
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810110/suppl/GSM7810110_ALS34.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595586" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924023" />
+  </Sample>
+
+  <Sample iid="GSM7810111">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_35</Title>
+    <Accession database="GEO">GSM7810111</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS35
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810111/suppl/GSM7810111_ALS35.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595585" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924024" />
+  </Sample>
+
+  <Sample iid="GSM7810112">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>ALS_36</Title>
+    <Accession database="GEO">GSM7810112</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Non-rapid ALS
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+ALS36
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810112/suppl/GSM7810112_ALS36.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595584" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924025" />
+  </Sample>
+
+  <Sample iid="GSM7810113">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_1</Title>
+    <Accession database="GEO">GSM7810113</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C1
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810113/suppl/GSM7810113_C1.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595583" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924026" />
+  </Sample>
+
+  <Sample iid="GSM7810114">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_2</Title>
+    <Accession database="GEO">GSM7810114</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C2
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810114/suppl/GSM7810114_C2.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595582" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924027" />
+  </Sample>
+
+  <Sample iid="GSM7810115">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_3</Title>
+    <Accession database="GEO">GSM7810115</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C3
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810115/suppl/GSM7810115_C3.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595581" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924028" />
+  </Sample>
+
+  <Sample iid="GSM7810116">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_4</Title>
+    <Accession database="GEO">GSM7810116</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C4
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810116/suppl/GSM7810116_C4.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595580" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924029" />
+  </Sample>
+
+  <Sample iid="GSM7810117">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_5</Title>
+    <Accession database="GEO">GSM7810117</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C5
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810117/suppl/GSM7810117_C5.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595579" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924030" />
+  </Sample>
+
+  <Sample iid="GSM7810118">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_6</Title>
+    <Accession database="GEO">GSM7810118</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C6
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810118/suppl/GSM7810118_C6.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595578" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924031" />
+  </Sample>
+
+  <Sample iid="GSM7810119">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_7</Title>
+    <Accession database="GEO">GSM7810119</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C7
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810119/suppl/GSM7810119_C7.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595577" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924032" />
+  </Sample>
+
+  <Sample iid="GSM7810120">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_8</Title>
+    <Accession database="GEO">GSM7810120</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C8
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810120/suppl/GSM7810120_C8.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595576" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924033" />
+  </Sample>
+
+  <Sample iid="GSM7810121">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_9</Title>
+    <Accession database="GEO">GSM7810121</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C9
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810121/suppl/GSM7810121_C9.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595575" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924034" />
+  </Sample>
+
+  <Sample iid="GSM7810122">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-02</Last-Update-Date>
+    </Status>
+    <Title>C_10</Title>
+    <Accession database="GEO">GSM7810122</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+PBMC
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+A single-cell RNA-seq library was prepared from PBMC using Chromium Single Cell 3' Library Kit v2 (10x Genomics) following the manufacturer’s instructions.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+C10
+    </Description>
+    <Data-Processing>
+Base calling and making fastq files were performed using software provided with the 10X Genomics Cell Ranger (cellranger mkfastq v3.0).
+Count data were calculated from fastq files using software provided with the 10X Genomics Cell Ranger (cellranger count v3.0).
+Count data were normalized to compare across samples using software provided with the 10X Genomics Cell Ranger (cellranger aggr v3.0).
+Assembly: hg19
+Supplementary files format and content: Tab-delimited text files include gene symbol and gene expression (read count) for each cell.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28038" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>DNBSEQ-G400</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7810nnn/GSM7810122/suppl/GSM7810122_C10.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN37595574" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX21924035" />
+  </Sample>
+
+  <Series iid="GSE244263">
+    <Status database="GEO">
+      <Submission-Date>2023-09-28</Submission-Date>
+      <Release-Date>2025-01-02</Release-Date>
+      <Last-Update-Date>2025-01-03</Last-Update-Date>
+    </Status>
+    <Title>Single-cell RNA-seq data of human PBMC from amyotrophic lateral sclerosis patients</Title>
+    <Accession database="GEO">GSE244263</Accession>
+    <Pubmed-ID>39731185</Pubmed-ID>
+    <Summary>
+Importance: Amyotrophic lateral sclerosis demonstrated changes in peripheral immune cells and proteins. However, the relationship between comprehensive immune profiles and clinical progression remained unclear.
+Objective: To identify the immune cells and proteins related to amyotrophic lateral sclerosis progression rate.
+Design: This case-control study enrolled healthy volunteers and patients with amyotrophic lateral sclerosis from March 29, 2021, to October 31, 2022.
+Setting: Tokushima University Hospital and Takeda Pharmaceutical Company Limited in Japan.
+Participants: This study screened 46 subjects to enroll 30 patients with amyotrophic lateral sclerosis within 2 years from onset and 10 healthy volunteers. Patients with rapid and non-rapid amyotrophic lateral sclerosis were those with Revised Amyotrophic Lateral Sclerosis Functional Rating Scale decreases of ≥1.0/month and &lt;1.0/month, respectively.
+Exposure(s): Peripheral blood samples were collected.
+Main Outcome(s) and Measure(s): The progression rate as assessed with the Revised Amyotrophic Lateral Sclerosis Functional Rating Scale decrease/month and the immune cell and protein profiles via single-cell RNA sequencing and immunoproteomics.
+Results: Samples of 7 (mean [standard deviation] age: 69.8 [14.4] years; male, 3) and 23 (60.7 [10.8] years; male, 17) patients with rapid and non-rapid amyotrophic lateral sclerosis, respectively, and 10 healthy volunteers (63.6 [10.2] years; male, 7) were analyzed. The ratios of T helper 17/regulatory T cells, mature/naïve CD8 T cells, and mature/naïve natural killer cells were significantly higher in rapid than in non-rapid amyotrophic lateral sclerosis. The ratio of T helper 17/regulatory T cells was significantly correlated with the progression rate. The immunoproteomics identified killer cell lectin-like receptor D1, trefoil factor 2, keratin 19, interleukin-17A, YTH N6-methyladenosine RNA binding protein F3, and neutrophil cytosolic factor 2 as significantly elevated in rapid amyotrophic lateral sclerosis. Cell type frequency and protein expression, such as T helper 17 cell–interleukin-17A and mature CD8 T cell–killer cell lectin-like receptor D1, were significantly correlated.
+Conclusions and Relevance: The progression rate was related to the increase of T helper 17 cells versus regulatory T cells and titers of T helper 17 cell- and CD8 T cell-related immunoproteins in patients with amyotrophic lateral sclerosis. These results provide promising biomarkers and targets for amyotrophic lateral sclerosis disease-modifying therapies.
+    </Summary>
+    <Overall-Design>
+Examination of gene expression profile of human PBMC from amyotrophic lateral sclerosis patients.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib1" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contributor-Ref ref="contrib8" position="7" />
+    <Contributor-Ref ref="contrib9" position="8" />
+    <Contributor-Ref ref="contrib10" position="9" />
+    <Contributor-Ref ref="contrib11" position="10" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7810083" />
+    <Sample-Ref ref="GSM7810084" />
+    <Sample-Ref ref="GSM7810085" />
+    <Sample-Ref ref="GSM7810086" />
+    <Sample-Ref ref="GSM7810087" />
+    <Sample-Ref ref="GSM7810088" />
+    <Sample-Ref ref="GSM7810089" />
+    <Sample-Ref ref="GSM7810090" />
+    <Sample-Ref ref="GSM7810091" />
+    <Sample-Ref ref="GSM7810092" />
+    <Sample-Ref ref="GSM7810093" />
+    <Sample-Ref ref="GSM7810094" />
+    <Sample-Ref ref="GSM7810095" />
+    <Sample-Ref ref="GSM7810096" />
+    <Sample-Ref ref="GSM7810097" />
+    <Sample-Ref ref="GSM7810098" />
+    <Sample-Ref ref="GSM7810099" />
+    <Sample-Ref ref="GSM7810100" />
+    <Sample-Ref ref="GSM7810101" />
+    <Sample-Ref ref="GSM7810102" />
+    <Sample-Ref ref="GSM7810103" />
+    <Sample-Ref ref="GSM7810104" />
+    <Sample-Ref ref="GSM7810105" />
+    <Sample-Ref ref="GSM7810106" />
+    <Sample-Ref ref="GSM7810107" />
+    <Sample-Ref ref="GSM7810108" />
+    <Sample-Ref ref="GSM7810109" />
+    <Sample-Ref ref="GSM7810110" />
+    <Sample-Ref ref="GSM7810111" />
+    <Sample-Ref ref="GSM7810112" />
+    <Sample-Ref ref="GSM7810113" />
+    <Sample-Ref ref="GSM7810114" />
+    <Sample-Ref ref="GSM7810115" />
+    <Sample-Ref ref="GSM7810116" />
+    <Sample-Ref ref="GSM7810117" />
+    <Sample-Ref ref="GSM7810118" />
+    <Sample-Ref ref="GSM7810119" />
+    <Sample-Ref ref="GSM7810120" />
+    <Sample-Ref ref="GSM7810121" />
+    <Sample-Ref ref="GSM7810122" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE244nnn/GSE244263/suppl/GSE244263_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1022022" />
+  </Series>
+
+</MINiML>

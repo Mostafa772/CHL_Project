@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Joel</First><Last>Guthridge</Last></Person>
+    <Department>Arthritis and Clinical Immunology</Department>
+    <Organization>Oklahoma Medical Research Foundation</Organization>
+    <Address>
+      <Line>825 NE 13th</Line>
+      <City>Oklahoma City</City>
+      <State>OK</State>
+      <Zip-Code>73104</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Samantha</First><Last>Webb</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Kevin</First><Last>Thomas</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Miles</First><Last>Smith</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5693865">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235950, SUB235969, SUB235993, SUB235954 [s1a-cite]</Title>
+    <Accession database="GEO">GSM5693865</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693865/suppl/GSM5693865_s1a_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693865/suppl/GSM5693865_s1a_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243680" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160537" />
+  </Sample>
+
+  <Sample iid="GSM5693866">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235950, SUB235969, SUB235993, SUB235954 [s1a-gex]</Title>
+    <Accession database="GEO">GSM5693866</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243681" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160538" />
+  </Sample>
+
+  <Sample iid="GSM5693867">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235950, SUB235969, SUB235993, SUB235954 [s1a-hto]</Title>
+    <Accession database="GEO">GSM5693867</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243682" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160539" />
+  </Sample>
+
+  <Sample iid="GSM5693868">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235948, SUB235962, SUB235972, SUB235997 [s1b-cite]</Title>
+    <Accession database="GEO">GSM5693868</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693868/suppl/GSM5693868_s1b_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693868/suppl/GSM5693868_s1b_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243683" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160540" />
+  </Sample>
+
+  <Sample iid="GSM5693869">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235948, SUB235962, SUB235972, SUB235997 [s1b-gex]</Title>
+    <Accession database="GEO">GSM5693869</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243684" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160541" />
+  </Sample>
+
+  <Sample iid="GSM5693870">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235948, SUB235962, SUB235972, SUB235997 [s1b-hto]</Title>
+    <Accession database="GEO">GSM5693870</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243685" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160542" />
+  </Sample>
+
+  <Sample iid="GSM5693871">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235956, SUB235960, SUB235994, SUB235973 [s2a-cite]</Title>
+    <Accession database="GEO">GSM5693871</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693871/suppl/GSM5693871_s2a_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693871/suppl/GSM5693871_s2a_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243686" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160543" />
+  </Sample>
+
+  <Sample iid="GSM5693872">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235956, SUB235960, SUB235994, SUB235973 [s2a-gex]</Title>
+    <Accession database="GEO">GSM5693872</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243687" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160544" />
+  </Sample>
+
+  <Sample iid="GSM5693873">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235956, SUB235960, SUB235994, SUB235973 [s2a-hto]</Title>
+    <Accession database="GEO">GSM5693873</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243688" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160545" />
+  </Sample>
+
+  <Sample iid="GSM5693874">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235957, SUB236000, SUB235978, SUB235995 [s2b-cite]</Title>
+    <Accession database="GEO">GSM5693874</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693874/suppl/GSM5693874_s2b_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693874/suppl/GSM5693874_s2b_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243689" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160546" />
+  </Sample>
+
+  <Sample iid="GSM5693875">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235957, SUB236000, SUB235978, SUB235995 [s2b-gex]</Title>
+    <Accession database="GEO">GSM5693875</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243690" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160547" />
+  </Sample>
+
+  <Sample iid="GSM5693876">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235957, SUB236000, SUB235978, SUB235995 [s2b-hto]</Title>
+    <Accession database="GEO">GSM5693876</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243691" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160548" />
+  </Sample>
+
+  <Sample iid="GSM5693877">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235946, SUB235951, SUB235990, SUB235970, SUB235992 [s3a-cite]</Title>
+    <Accession database="GEO">GSM5693877</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693877/suppl/GSM5693877_s3a_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693877/suppl/GSM5693877_s3a_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243692" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160549" />
+  </Sample>
+
+  <Sample iid="GSM5693878">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235946, SUB235951, SUB235990, SUB235970, SUB235992 [s3a-gex]</Title>
+    <Accession database="GEO">GSM5693878</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243693" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160550" />
+  </Sample>
+
+  <Sample iid="GSM5693879">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235946, SUB235951, SUB235990, SUB235970, SUB235992 [s3a-hto]</Title>
+    <Accession database="GEO">GSM5693879</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243694" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160551" />
+  </Sample>
+
+  <Sample iid="GSM5693880">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235986, SUB235958, SUB235967, SUB235987, SUB235975 [s3b-cite]</Title>
+    <Accession database="GEO">GSM5693880</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693880/suppl/GSM5693880_s3b_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693880/suppl/GSM5693880_s3b_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243695" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160552" />
+  </Sample>
+
+  <Sample iid="GSM5693881">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235986, SUB235958, SUB235967, SUB235987, SUB235975 [s3b-gex]</Title>
+    <Accession database="GEO">GSM5693881</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243698" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160553" />
+  </Sample>
+
+  <Sample iid="GSM5693882">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235986, SUB235958, SUB235967, SUB235987, SUB235975 [s3b-hto]</Title>
+    <Accession database="GEO">GSM5693882</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243699" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160554" />
+  </Sample>
+
+  <Sample iid="GSM5693883">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235944, SUB235959, SUB235974, SUB236001, SUB235988 [s4a-cite]</Title>
+    <Accession database="GEO">GSM5693883</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693883/suppl/GSM5693883_s4a_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693883/suppl/GSM5693883_s4a_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243700" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160555" />
+  </Sample>
+
+  <Sample iid="GSM5693884">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235944, SUB235959, SUB235974, SUB236001, SUB235988 [s4a-gex]</Title>
+    <Accession database="GEO">GSM5693884</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243701" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160556" />
+  </Sample>
+
+  <Sample iid="GSM5693885">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235944, SUB235959, SUB235974, SUB236001, SUB235988 [s4a-hto]</Title>
+    <Accession database="GEO">GSM5693885</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243702" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160557" />
+  </Sample>
+
+  <Sample iid="GSM5693886">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235952, SUB235981, SUB235983, SUB235984, SUB235965 [s4b-cite]</Title>
+    <Accession database="GEO">GSM5693886</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693886/suppl/GSM5693886_s4b_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693886/suppl/GSM5693886_s4b_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243703" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160558" />
+  </Sample>
+
+  <Sample iid="GSM5693887">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235952, SUB235981, SUB235983, SUB235984, SUB235965 [s4b-gex]</Title>
+    <Accession database="GEO">GSM5693887</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243696" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160559" />
+  </Sample>
+
+  <Sample iid="GSM5693888">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235952, SUB235981, SUB235983, SUB235984, SUB235965 [s4b-hto]</Title>
+    <Accession database="GEO">GSM5693888</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243697" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160560" />
+  </Sample>
+
+  <Sample iid="GSM5693889">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235985, SUB235955, SUB235966, SUB235964, SUB235998 [s5a-cite]</Title>
+    <Accession database="GEO">GSM5693889</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693889/suppl/GSM5693889_s5a_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693889/suppl/GSM5693889_s5a_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243704" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160561" />
+  </Sample>
+
+  <Sample iid="GSM5693890">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235985, SUB235955, SUB235966, SUB235964, SUB235998 [s5a-gex]</Title>
+    <Accession database="GEO">GSM5693890</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243705" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160562" />
+  </Sample>
+
+  <Sample iid="GSM5693891">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235985, SUB235955, SUB235966, SUB235964, SUB235998 [s5a-hto]</Title>
+    <Accession database="GEO">GSM5693891</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243706" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160563" />
+  </Sample>
+
+  <Sample iid="GSM5693892">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235953, SUB235991, SUB235947, SUB235945, SUB235980 [s5b-cite]</Title>
+    <Accession database="GEO">GSM5693892</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693892/suppl/GSM5693892_s5b_filtered_cellranger.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5693nnn/GSM5693892/suppl/GSM5693892_s5b_raw_cellranger.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243707" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160564" />
+  </Sample>
+
+  <Sample iid="GSM5693893">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235953, SUB235991, SUB235947, SUB235945, SUB235980 [s5b-gex]</Title>
+    <Accession database="GEO">GSM5693893</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243708" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160565" />
+  </Sample>
+
+  <Sample iid="GSM5693894">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-11</Last-Update-Date>
+    </Status>
+    <Title>SUB235953, SUB235991, SUB235947, SUB235945, SUB235980 [s5b-hto]</Title>
+    <Accession database="GEO">GSM5693894</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CD2-depleted PBMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+CD2-depleted PBMC
+      </Characteristics>
+      <Characteristics tag="subject status">
+healthy controls and SLE patients
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were stained as per the CITE-seq_and_Hashing_protocol_190213 protocol (found here: https://citeseq.files.wordpress.com/2019/02/cite-seq_and_hashing_protocol_190213.pdf).  Cells were pooled 4 or 5 samples to a pool and captured using the Chromium Single Cell 3' Reagent Kit v2 Revision F (found at https://support.10xgenomics.com/single-cell-gene-expression/index/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry)
+Libraries were constructed as per the manufacturer's protocol in the Chromium Single Cell 3' Kit v2, Revision F.  In brief, captured mRNAs were reverse transcribed prior to the breaking of cell/gel bead droplets.  cDNAs were recovered and underwent amplification.  SPRI beads were used to clean the libraries and split them into gene expression and antibody-dependent libraries.  The GEX libraries underwent end repair, polyA tailing, and fragmentation prior to further size selection to extract 300-500 bp fragments and the ligation of sequencing adaptors; the ADT libraries were likewise purified and had sequencing adaptors added.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.20.0.422
+RNA-seq reads were aligned and counted using CellRanger version 5.0.0 with default settings
+CellRanger output was demultiplexed, concatenated, and analyzed using Seurat version 4.0.3
+Genome_build: GRCh38 and mm9
+Supplementary_files_format_and_content: FASTQs, MarketMatrix (.tsv and .mtx), and Seurat object (.Rdata)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23243709" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13160566" />
+  </Sample>
+
+  <Series iid="GSE189050">
+    <Status database="GEO">
+      <Submission-Date>2021-11-17</Submission-Date>
+      <Release-Date>2023-10-11</Release-Date>
+      <Last-Update-Date>2023-10-12</Last-Update-Date>
+    </Status>
+    <Title>Molecular Dissection of Disease Heterogeneity in SLE</Title>
+    <Accession database="GEO">GSE189050</Accession>
+    <Pubmed-ID>37606045</Pubmed-ID>
+    <Summary>
+Systemic lupus erythematosus (SLE) affects 1 in 537 of African American (AA) women, which is &gt;2-fold more than European American (EA) women. AA patients also develop the disease at a younger age, have more severe symptoms, and a greater chance of early mortality. We used a multi-omics approach to uncover ancestry-specific immune alterations in SLE patients and healthy controls that may contribute to disease disparities. Cell composition, signaling, and epigenetics were evaluated by mass cytometry; droplet-based single cell transcriptomics and paired proteogenomics (scRNA-Seq/scCITE-Seq).  Soluble mediator levels were measured in plasma and stimulated whole blood. TLR3/4/7/8/9 gene expression pathways in B cells and monocytes were enhanced in AA SLE patients compared to EA patients. TLR7/8/9 and IFN phospho-signaling responses were also heightened in healthy AA versus EA controls. Exposure of AA and EA healthy control cells to TLR7/8/9 agonists or IFN resulted in altered immune cell compositions that recapitulated the ancestry-associated differences in SLE patients. These data support that ancestry-based differences in TLR7/8, TLR9, and IFN responses that can be detected in healthy individuals could influence lupus disease course and severity.
+    </Summary>
+    <Overall-Design>
+multiplexed scRNA-seq with CITEseq profiles of PBMCs from both healthy controls and SLE patients with high and low disease activity.
+Please note that [1] the SUBnnnnn accessions (in the sample title) are deidentified names for the individual demultiplexed samples [2] The &quot;sample.csv&quot; has sample characteristics for each sample [3] Each processed data file was generated from *cite, *gex, and *hto raw data  and is linked to the *cite sample records.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5693865" />
+    <Sample-Ref ref="GSM5693866" />
+    <Sample-Ref ref="GSM5693867" />
+    <Sample-Ref ref="GSM5693868" />
+    <Sample-Ref ref="GSM5693869" />
+    <Sample-Ref ref="GSM5693870" />
+    <Sample-Ref ref="GSM5693871" />
+    <Sample-Ref ref="GSM5693872" />
+    <Sample-Ref ref="GSM5693873" />
+    <Sample-Ref ref="GSM5693874" />
+    <Sample-Ref ref="GSM5693875" />
+    <Sample-Ref ref="GSM5693876" />
+    <Sample-Ref ref="GSM5693877" />
+    <Sample-Ref ref="GSM5693878" />
+    <Sample-Ref ref="GSM5693879" />
+    <Sample-Ref ref="GSM5693880" />
+    <Sample-Ref ref="GSM5693881" />
+    <Sample-Ref ref="GSM5693882" />
+    <Sample-Ref ref="GSM5693883" />
+    <Sample-Ref ref="GSM5693884" />
+    <Sample-Ref ref="GSM5693885" />
+    <Sample-Ref ref="GSM5693886" />
+    <Sample-Ref ref="GSM5693887" />
+    <Sample-Ref ref="GSM5693888" />
+    <Sample-Ref ref="GSM5693889" />
+    <Sample-Ref ref="GSM5693890" />
+    <Sample-Ref ref="GSM5693891" />
+    <Sample-Ref ref="GSM5693892" />
+    <Sample-Ref ref="GSM5693893" />
+    <Sample-Ref ref="GSM5693894" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE189nnn/GSE189050/suppl/GSE189050_RAW.tar
+    </Supplementary-Data>
+    <Supplementary-Data type="RDS">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE189nnn/GSE189050/suppl/GSE189050_final_seurat.RDS.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE189nnn/GSE189050/suppl/GSE189050_sample.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA781257" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP346610" />
+  </Series>
+
+</MINiML>
